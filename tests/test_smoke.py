@@ -8,6 +8,7 @@ from support_desk.cli import main
 from support_desk.models import Note, ProjectState, Task
 from support_desk.cli import demo_state
 from support_desk.storage import load_state, save_state
+from support_desk.models import generate_short_id
 
 
 class ProjectSmokeTests(unittest.TestCase):
@@ -43,6 +44,11 @@ class ProjectSmokeTests(unittest.TestCase):
 
         self.assertGreaterEqual(len(state.notes), 1)
         self.assertGreaterEqual(len(state.tasks), 1)
+
+    def test_generate_short_id_uses_prefix(self) -> None:
+        generated = generate_short_id("note", size=6)
+
+        self.assertTrue(generated.startswith("note-"))
 
 
 if __name__ == "__main__":
