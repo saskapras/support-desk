@@ -1,11 +1,10 @@
 # SupportQueue Stage Roadmap
 
-Current stage: 22
+Current stage: 23
 Target stages: 74
 
 ## Upcoming Focus
 
-- Stage 22: Document validation rules
 - Stage 23: Capture troubleshooting notes
 - Stage 24: Add sample workflow
 - Stage 25: Document backup routine
@@ -13,3 +12,4 @@ Target stages: 74
 - Stage 27: Describe export planning notes
 - Stage 28: Record CLI naming decisions
 - Stage 29: Add maintainer checklist
+- Stage 30: Document task workflow
